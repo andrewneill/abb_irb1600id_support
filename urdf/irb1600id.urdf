@@ -6,7 +6,7 @@
 <robot name="abb_irb1600id" xmlns:xacro="http://ros.org/wiki/xacro">
   <link name="base_link">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.5"/>
       <geometry>
         <mesh filename="package://abb_irb1600id_support/meshes/irb1600id/visual/base_link.stl"/>
       </geometry>
@@ -121,7 +121,7 @@
   </link>
   <link name="tool0"/>
   <joint name="joint_1" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.5"/>
     <parent link="base_link"/>
     <child link="link_1"/>
     <axis xyz="0 0 1"/>
